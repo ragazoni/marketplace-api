@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  auth-service:
+    build:
+      context: https://github.com/ragazoni/auth.git
+      dockerfile: Dockerfile
+    ports:
+      - "9001:9001"
+    depends_on:
+      - mongo
+    environment:
+      MONGO_URI: "mongodb://mongo:27017/authservice"
+
+  debt-service:
+    build:
+      context: https://github.com/ragazoni/debt.git
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+    environment:
+      MONGO_URI: "mongodb://mongo:27017/debtservice"
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
