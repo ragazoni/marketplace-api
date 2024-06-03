@@ -8,7 +8,6 @@ Marketplace-Api
 - [Arquitetura](#arquitetura)
 - [Banco de Dados](#banco-de-dados)
 - [Estrutura do Projeto](#estrutura-do-projeto)
-- [Configuração do Docker Compose](#configuração-do-docker-compose)
 - [Como Executar](#como-executar)
 - [Endpoints Disponíveis](#endpoints-disponíveis)
 
@@ -111,6 +110,9 @@ cd marketplace-api
 ```
 
 ## Construir e iniciar os serviços
+Precisa ter instalado na maquina docker, docker-compose.
+execute comando abaixo para construir e iniciar os serviços, todas as configurações 
+estão dentro do yml neste projeto.
 
 ```bash
 docker-compose up --build
