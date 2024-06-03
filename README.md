@@ -1,6 +1,6 @@
 Marketplace-Api
 
-# Projeto de Microserviços: Auth-Service e Debt-Service
+# Projeto de Microserviços: Auth e Debt
 
 ## Sumário
 
