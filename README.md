@@ -53,6 +53,7 @@ Marketplace-Api
   - **Debt-Service**: Coleção para armazenar informações de dívidas.
 
 ## Estrutura do Projeto
+````
 AUTH/
 internal/
 ├── Dockerfile
@@ -92,7 +93,7 @@ internal/
 │   └── debt.go
 |    ├── router.go
 │   └── score.go
-
+````
 ### Como executar o projeto
 
 - **marketplace-api**: Este repositório contém os serviços de autenticação e dívidas, dentro dele so tem um arquivo docker-compose.yml
@@ -107,11 +108,13 @@ git clone https://github.com/ragazoni/auth.git
 git clone https://github.com/ragazoni/debt.git
 git clone https://github.com/ragazoni/marketplace-api.git
 cd marketplace-api
+```
 
 ## Construir e iniciar os serviços
 
 ```bash
 docker-compose up --build
+```
 
 ## Acessar serviços
 
@@ -123,7 +126,7 @@ tem as configurações e a porta utilizada de cada serviço, pode altera-las se 
 
 ```bash
 go run main.go
-
+```
 
 
  
